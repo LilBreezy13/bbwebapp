@@ -581,3 +581,55 @@ section.sec2{
       background: #FFF;
  }
  
+
+
+
+ /* /////////////////// FOOTER //////////////////////////  */
+footer{
+  background-color: #003C96;
+}
+
+ .footer-logo{
+  text-align: center;
+  color: #fff;
+  padding-top: 5%;
+ }
+ 
+ .footer-text{
+  text-align: center;
+  color: #fff;
+ }
+ 
+ .hr{
+  width: 60%;
+ 
+ }
+
+ .footer__social{
+  text-align: center;
+
+ }
+ .footer__link{
+  
+ }
+
+ .bi-facebook{
+  
+  color: #fff;
+  
+ }
+
+ .footer__copy{
+  text-align: center;
+  color: #fff;
+ }
+
+ .bi-twitter{
+  color: #fff;
+ }
+
+ .bi-instagram{
+  color: #fff;
+ }
+
+ .footer__link{}
