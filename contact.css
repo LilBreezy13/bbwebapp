@@ -208,6 +208,7 @@ section.sec2{
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    padding-top: 20px;
   }
 
   .map{
