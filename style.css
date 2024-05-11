@@ -681,6 +681,16 @@ img {
 
   color: #333;
 }
+
+@media screen and (max-width:768px) {
+  .news-heading {
+    font-size: 22px;
+    line-height: 1.4;
+  
+    color: #333;
+  }
+}
+
 .news p {
   font-size: 18px;
   margin-bottom: 16px;
