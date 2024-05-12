@@ -85,7 +85,7 @@ section.sec2{
         display: block;
         width: 100%;
         height: 60px;
-        background: #262626;
+        background: #003C96;
         /* background: #003C96; */
         position: fixed;
         top: 0;
@@ -125,7 +125,7 @@ section.sec2{
         width: 100%;
         top: 60px;
         left: 0;
-        background: #262626;
+        background: #003C96;
         float: none;
         display: none;
     }
@@ -328,11 +328,8 @@ section{
   
 .content{
  
-  padding-top: 900%;
+  padding-top: 400%;
 
-section{
-  padding-top: 70%;
-}
 
 }
 
