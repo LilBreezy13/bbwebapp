@@ -10,8 +10,8 @@ body {
     sans-serif;
   background-image: linear-gradient(
     to right,
-    rgb(245, 101, 101),
-    rgb(13, 13, 91)
+     rgb(0, 60, 150),
+     rgb(0, 60, 150)
   );
 }
 
@@ -241,7 +241,8 @@ body {
 
 .input-block label {
   font-size: 14px;
-  color: #a1b4b4;
+  font-weight: bold;
+  color: #003c96;
 }
 
 .input-block input {
@@ -278,13 +279,13 @@ body {
 
 .btn-login {
   color: #fbfdff;
-  background: #a7e245;
+  background: #003c96;
   transform: translateX(-30%);
 }
 
 .btn-signup {
-  color: #a7e245;
+  color: #003c96;
   background: #fbfdff;
-  box-shadow: inset 0 0 0 2px #a7e245;
+  box-shadow: inset 0 0 0 2px #003c96;
   transform: translateX(30%);
 }
