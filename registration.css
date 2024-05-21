@@ -400,6 +400,50 @@ body{
 
   /* ///////////////////MOCK  */
   
+  .counter {
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    margin: 20px;
+    /* margin-bottom: 7%; */
+    /* margin-right: 20%; */
+    /* padding-left: 8%; */
+    /* padding-right: 56%; */
+    /* margin-left: 20%; */
+
+  }
+
+  
+
+  .counter input {
+    width: 200px;
+    height: 32px;
+    text-align: center;
+    border: 2px solid #003C96;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 16px;
+}
+.counter button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #003C96;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.counter button:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+}
+
+ /* ///////////////////MOCK ENDS   */
+  
 
 
  
