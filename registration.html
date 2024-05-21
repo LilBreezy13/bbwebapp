@@ -119,23 +119,38 @@
     </form> -->
 
     <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="School Name" aria-label="Recipient's username" aria-describedby="button-addon2">
-    </div> 
-    
-    <div class="input-group mb-3">
-        <!-- <input type="tel" pattern="[0-9]*" /> -->
-        <input type="tel" pattern="[0-9]" class="form-control" placeholder="Contact" aria-label="Recipient's username" aria-describedby="button-addon2">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="School Name"
+        aria-label="Recipient's username"
+        aria-describedby="button-addon2"
+      />
     </div>
 
     <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Location" aria-label="Recipient's username" aria-describedby="button-addon2">
-    </div> 
-<br>
+      <!-- <input type="tel" pattern="[0-9]*" /> -->
+      <input
+        type="tel"
+        pattern="[0-9]"
+        class="form-control"
+        placeholder="Contact"
+        aria-label="Recipient's username"
+        aria-describedby="button-addon2"
+      />
+    </div>
 
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Location"
+        aria-label="Recipient's username"
+        aria-describedby="button-addon2"
+      />
+    </div>
 
-
-
-    <div class="select-menu">
+    <!-- <div class="select-menu">
         <div class="select">
           <span>Exam Types</span>
           <i class="fas fa-angle-down"></i>
@@ -145,11 +160,76 @@
           <div class="option">Terminal</div>
      
         </div>
-      </div>
-    
-       <br>
+      </div> -->
+    <div class="input-group mb-4">
+      <!-- <label for="registrationType">Exam Type:</label> -->
+      <select id="registrationType" onchange="showForm()">
+        <option value="">Exam Types</option>
+        <option value="student">Mock Registration</option>
+        <option value="teacher">Terminal Registration</option>
+        <!-- <option value="admin">Admin Registration</option> -->
+      </select>
+    </div>
 
-       <!-- <div class="input-group mb-3">
+    <div id="studentForm" class="registration-form">
+      <!-- <h4>Mock Registration</h4> -->
+      <!-- Student registration form fields -->
+      <div class="input-group mb-4">
+        <form>
+          
+          <div class="counter">
+            <!-- <button onclick="decrement()">-</button> -->
+            <input
+              type="number"
+              id="counterInput"
+              value="0"
+              min="0"
+              max="10000"
+            />
+            <!-- <button onclick="increment()">+</button> -->
+          </div>
+
+          <form action="/action_page.php">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+            <label for="vehicle1"> We offer French</label><br />
+          </form>
+
+          <!-- <label for="studentName">Name:</label>
+            <input type="text" id="studentName" name="studentName"><br><br>
+            <label for="studentEmail">Email:</label>
+            <input type="email" id="studentEmail" name="studentEmail"><br><br>
+            <input type="submit" value="Register"> -->
+        </form>
+      </div>
+    </div>
+
+    <div id="teacherForm" class="registration-form">
+      <h2>Teacher Registration</h2>
+      <!-- Teacher registration form fields -->
+      <form>
+        <label for="teacherName">Name:</label>
+        <input type="text" id="teacherName" name="teacherName" /><br /><br />
+        <label for="teacherEmail">Email:</label>
+        <input type="email" id="teacherEmail" name="teacherEmail" /><br /><br />
+        <input type="submit" value="Register" />
+      </form>
+    </div>
+
+    <div id="adminForm" class="registration-form">
+      <h2>Admin Registration</h2>
+      <!-- Admin registration form fields -->
+      <form>
+        <label for="adminName">Name:</label>
+        <input type="text" id="adminName" name="adminName" /><br /><br />
+        <label for="adminEmail">Email:</label>
+        <input type="email" id="adminEmail" name="adminEmail" /><br /><br />
+        <input type="submit" value="Register" />
+      </form>
+    </div>
+
+    <br />
+
+    <!-- <div class="input-group mb-3">
         <div class="form-check form-switch">
             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
             <label class="form-check-label" for="flexSwitchCheckChecked">French Option</label>
@@ -157,15 +237,10 @@
     
       
     </div> -->
-    
-  
 
-
-
-
-  <br>
-  <br>
-  <br>
+    <br />
+    <br />
+    <br />
 
     <!-- BOUTTON LOGIN -->
     <button type="submit" class="login_btn">Register</button>
