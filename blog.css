@@ -159,111 +159,173 @@ section.sec2{
 }
 
 
-
-
-
-/* /////////////////////////////////////  */
-/* import inter font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
-/* root */
-:root {
-  --bg-light: #F5F5FC;
-  --bg-dark: #35353C;
-  --bg-darker: #15151C;
-  --font-body: #55555C;
-  --shadow: #C5C5CC;
+/* ///////////////////////////////////////////  */
+*,
+* ::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* demo related */
-body{
-  background: #FFF;
-  height:100%;
-  padding:10%;
-  font-family: "Inter", sans-serif;
-  color: var(--font-body);
+html {
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  color: #333333;
+  letter-spacing: 0.01rem;
 }
 
-.demo_title h1,h6{
-  color: var(--bg-darker);
-}
-
-#copyrights{
-  position: absolute;
-  bottom: 2%;
-  right: 2%;
-}
-
-#copyrights a{
+a {
   text-decoration: none;
-  color: var(--bg-darker);
+  color: inherit;
 }
 
-/* tpn card style */
-.tpn_card{
-  background: var(--bg-light);
-  padding: 23px;
-  border-radius:27px;
+.main {
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 2rem;
+  overflow: hidden;
+  /* background-color: whitesmoke; */
 }
 
-.tpn_card img{
-  border-radius:23px;
-  box-shadow: 1px 7px 13px var(--shadow);
+.container {
+  max-width: 80rem;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 3rem 0;
 }
 
-.tpn_card h5{
-  color: var(--bg-dark);
+.container .deco {
+  height: 3rem;
+  width: 23rem;
+  filter: brightness(120%);
 }
 
-.tpn_card p{
-  color: var(--font-body);
-  font-weight:400;
-  margin-bottom:24px;
+.flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  width: 100%;
+}
+.cards-container {
+  padding: 2rem;
 }
 
-.tpn_card .tpn_btn{
-  padding:13px 27px !important;
-  line-height: normal;
-  background: var(--bg-dark);
-  border-radius:17px;
-  text-decoration:none;
-  color: #FFF;
-  box-shadow: 1px 7px 13px var(--shadow);
-  transition: all .7s ease;
+.card-box {
+  display: flex;
+  flex-flow: column;
+  width: 36.3rem;
+  background-color: white;
+  font-size: 0.92rem;
+  box-shadow: 0px 3px 4px gray;
 }
 
-.tpn_card .tpn_btn:hover{
-  background: var(--bg-darker);
-  box-shadow: none;
+.card-img {
+  height: 23rem;
 }
 
-
-.our-resources{
-    text-align: center;
+.card-data,
+.card-title,
+.card-description {
+  padding: 0 1.5rem;
 }
 
-.header-span1{
-    color: #003C96;
-    font-weight: bolder;
+.card-data {
+  padding-top: 2rem;
+  padding-bottom: 1.3rem;
+  width: 100%;
+  font-size: 1rem;
 }
 
-.header-span{
-    color: #f00;
-    font-weight: bolder;
+.card-data p {
+  display: inline-block;
 }
 
+.text-right {
+  margin-left: 9.4rem;
+  margin-right: 1rem;
+}
 
+.autor {
+  font-weight: bold;
+}
 
+.card-title {
+  display: block;
+  margin: 0;
+  margin-bottom: 1.3rem;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.card-title:hover {
+  background-color: rgb(205, 202, 202);
+}
 
+.card-description {
+  font-size: 1.15rem;
+  line-height: 1.7rem;
+  padding-bottom: 2rem;
+}
 
+@media all and (max-width: 1200px) {
+  .card-box {
+    width: 30rem;
+  }
 
+  .container {
+    padding: 1%;
+  }
 
+  .card-data {
+    display: flex;
+    justify-content: space-between;
+  }
 
+  .text-right {
+    margin: 0;
+  }
 
+  .card-img {
+    height: 20rem;
+  }
+}
 
+@media all and (max-width: 1000px) {
+  .flex-container {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
 
- /* ////////////!!!!!!!!!!!!!!!!!!!!!!!! FOOTER ////////////////////////   */
+  .card-box {
+    width: 100%;
+  }
 
+  .card-img {
+    height: 27rem;
+  }
+}
 
- /* /////////////////// FOOTER //////////////////////////  */
- 
+@media all and (max-width: 550px) {
+  .card-img {
+    height: 20rem;
+  }
+
+  .data-text {
+    font-size: 0.85rem;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-description {
+    font-size: 1rem;
+  }
+}

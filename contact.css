@@ -27,7 +27,7 @@ nav{
 }
 nav.black{
     /* background: rgba(0,0,0,0.8); */
-    background: #003C96;
+    background: #000aba;
     height: 80px;
     padding: 10px 50px;
 }
@@ -261,7 +261,7 @@ section.sec2{
   }
   
   .contact-form {
-    background-color: #003C96;
+    background-color:  #000aba;
     position: relative;
   }
   
@@ -290,7 +290,7 @@ section.sec2{
     position: absolute;
     width: 26px;
     height: 26px;
-    background-color: #003C96;
+    background-color:  #000aba;
     transform: rotate(45deg);
     top: 50px;
     left: -13px;
@@ -429,7 +429,7 @@ section.sec2{
   }
   
   .contact-info .title {
-    color: #003C96;
+    color: #000aba;
   }
   
   .text {
@@ -446,7 +446,7 @@ section.sec2{
   }
   
   .information i {
-    color: #003C96;
+    color: #000aba;
   }
   
   .icon {
@@ -471,7 +471,7 @@ section.sec2{
     width: 35px;
     height: 35px;
     border-radius: 5px;
-    background: linear-gradient(45deg, #003C96, #003C96);
+    background: linear-gradient(45deg,  #000aba,  #000aba);
     color: #fff;
     text-align: center;
     line-height: 35px;
@@ -488,7 +488,7 @@ section.sec2{
     position: absolute;
     width: 110px;
     height: 100px;
-    border: 22px solid #003C96;
+    border: 22px solid #000aba;
     border-radius: 50%;
     bottom: -77px;
     right: 50px;
@@ -500,7 +500,7 @@ section.sec2{
     width: 500px;
     height: 500px;
     border-radius: 50%;
-    background: linear-gradient(to bottom, #003C96, #003C96);
+    background: linear-gradient(to bottom, #000aba, #003C96);
     bottom: 50%;
     right: 50%;
     transform: translate(-40%, 38%);

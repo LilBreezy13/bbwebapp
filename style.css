@@ -20,7 +20,7 @@ nav {
 }
 nav.black {
   /* background: rgba(0,0,0,0.8); */
-  background: #003c96;
+  background: #000aba;;
   height: 80px;
   padding: 10px 50px;
 }
@@ -424,7 +424,7 @@ img {
 }
 
 .header-span{
-  color: #003c96;
+  color:  #000aba;
 }
 
 .header-span1{
@@ -433,7 +433,7 @@ img {
 
 .btn1 {
   display: inline-block;
-  background-color:#003c96 ;
+  background-color: #000aba;
   color: #fff;
   padding: 0.8rem 1.5rem;
   border: none;
