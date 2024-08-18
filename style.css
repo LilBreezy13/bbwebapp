@@ -1083,7 +1083,8 @@ section {
 }
 
 .section-bg {
-  background-color: #f3f5fa;
+  /* background-color: #f3f5fa; */
+  background-color:  #000aba;;;
 }
 
 .section-title {
@@ -1242,7 +1243,7 @@ section {
 
   /*===== Colors =====*/
   --first-color: #3E0E12;
-  --first-color-dark: #003c96;
+  --first-color-dark: #000aba;
   --text-color: #524748;
   --first-color-light: #7B6F71;
   --first-color-lighten: #FBF9F9;
