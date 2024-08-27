@@ -140,6 +140,7 @@ nav > ul > li > a {
 /* } */
 
 
+/* ////////// -------------- NAVBAR STARTS ------------ ////////////////   */
 
 nav{
   background:  #000aba;
@@ -173,6 +174,7 @@ nav .nav-items li a{
   text-decoration: none;
 }
 nav .nav-items li a:hover{
+  color: #ff3d00;
   color: #ff3d00;
 }
 nav form{
@@ -655,7 +657,7 @@ img {
   gap: 3rem;
   align-items: center;
   justify-content: center;
-  padding-top: 5%;
+  padding-top: 1px;
   padding-bottom: 5%;
 }
 
