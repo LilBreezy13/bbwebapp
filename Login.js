@@ -1,23 +1,16 @@
 
-function Login() {
-    const FirstName = document.getElementById('FirstName').value;
-    const LastName = document.getElementById('LastName').value;
-    const PhoneNumber = document.getElementById('PhoneNumber').value;
-    const Email = document.getElementById('Email').value;
+  function Login() {
+    const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
-    
   
     const payload = {
       email: email,
-      password: password,
-      FirstName: firstname,
-      PhoneNumber: phonenumber,
-      FirstName: firstname,
+      password: password
     };
   
    
   
-    fetch('http://localhost:3000/v1/auth/register', {
+    fetch('http://localhost:3000/v1/auth/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -46,9 +39,4 @@ function Login() {
           alert(error.message);
         }
       });
-      
   }
-
-
-
-  

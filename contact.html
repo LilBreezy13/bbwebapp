@@ -1,19 +1,22 @@
 <head>
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1, user-scalable=no"
-    />
-    <link
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="stylesheet" href="./contact.css" />
-    <link rel="stylesheet" href="./Css/bootstrap.min.css" />
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <title>Best Brain </title>
+  <meta
+    name="viewport"
+    content="width=device-width,initial-scale=1, user-scalable=no"
+  />
+  <link
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <link rel="stylesheet" href="./contact.css" />
+  <link rel="stylesheet" href="./Css/bootstrap.min.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <title>Best Brain</title>
   <link rel="icon" type="image/x-icon" href="./Assets/favicon.ico" />
-    <!-- <script type="text/javascript">
+  <!-- <script type="text/javascript">
       $(window).on('scroll',function(){
           if($(window).scrollTop()){
               $('nav').addClass('black');
@@ -28,12 +31,12 @@
           })
           })
       </script> -->
-      <script
-      src="https://kit.fontawesome.com/64d58efce2.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <!--Start of Tawk.to Script-->
+  <script
+    src="https://kit.fontawesome.com/64d58efce2.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<!--Start of Tawk.to Script-->
 <!-- <script  class="tawk" type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
@@ -45,25 +48,26 @@
     s0.parentNode.insertBefore(s1,s0);
     })();
     </script> -->
-    <!--End of Tawk.to Script-->
+<!--End of Tawk.to Script-->
 
-    
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/6633c261a0c6737bd133bd0e/1i6ckmcad';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
+  var Tawk_API = Tawk_API || {},
+    Tawk_LoadStart = new Date();
+  (function () {
+    var s1 = document.createElement("script"),
+      s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = "https://embed.tawk.to/6633c261a0c6737bd133bd0e/1i6ckmcad";
+    s1.charset = "UTF-8";
+    s1.setAttribute("crossorigin", "*");
+    s0.parentNode.insertBefore(s1, s0);
   })();
-  </script>
-  <!--End of Tawk.to Script-->
+</script>
+<!--End of Tawk.to Script-->
 
-  <body>
-<!-- 
+<body>
+  <!-- 
     <div class="responsive-bar">
       <div class="logo">
         
@@ -73,8 +77,7 @@
       </div>
     </div> -->
 
-
-    <!-- <nav>
+  <!-- <nav>
       <div class="logo">
        
         <img src="./Assets/logo.721e724e0a02fece1eda.jpeg" alt="logo" />
@@ -91,106 +94,103 @@
     </nav>
    -->
 
-   
+  <!--////////// -------------- NAVBAR STARTS ------------ ////////////////  -->
 
-<!--////////// -------------- NAVBAR STARTS ------------ ////////////////  -->
+  <nav>
+    <div class="menu-icon">
+      <span class="fas fa-bars"></span>
+    </div>
+    <div class="logo">BestBrainKo</div>
+    <div class="nav-items">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/service.html">Services</a></li>
+      <li><a href="/registration.html">Registration</a></li>
 
-<nav>
-  <div class="menu-icon">
-     <span class="fas fa-bars"></span>
-  </div>
-  <div class="logo">
-     BestBrainKo
-  </div>
-  <div class="nav-items">
-     
-     
-     <li><a href="/index.html">Home</a></li>
-     <li><a href="/about.html">About</a></li>
-     <li><a href="/service.html">Services</a></li>
-     <li><a href="/registration.html">Registration</a></li>
- 
-     <li><a href="/resources.html">Resources</a></li>
-     <!-- <li><a href="/contact.html">Contact Us</a></li> -->
-  </div>
-  <div class="search-icon">
-     <span class="fas fa-search"></span>
-  </div>
-  <div class="cancel-icon">
-     <span class="fas fa-times"></span>
-  </div>
-  <form action="#">
-     <input type="search" class="search-data" placeholder="Search" required>
-     <button type="submit" class="fas fa-search"></button>
-  </form>
-</nav>
+      <li><a href="/resources.html">Resources</a></li>
+      <!-- <li><a href="/contact.html">Contact Us</a></li> -->
+    </div>
+    <div class="search-icon">
+      <span class="fas fa-search"></span>
+    </div>
+    <div class="cancel-icon">
+      <span class="fas fa-times"></span>
+    </div>
+    <form action="#">
+      <input type="search" class="search-data" placeholder="Search" required />
+      <button type="submit" class="fas fa-search"></button>
+    </form>
+  </nav>
 
+  <script>
+    const menuBtn = document.querySelector(".menu-icon span");
+    const searchBtn = document.querySelector(".search-icon");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const items = document.querySelector(".nav-items");
+    const form = document.querySelector("form");
+    menuBtn.onclick = () => {
+      items.classList.add("active");
+      menuBtn.classList.add("hide");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    };
+    cancelBtn.onclick = () => {
+      items.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      searchBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      form.classList.remove("active");
+      cancelBtn.style.color = "#ff3d00";
+    };
+    searchBtn.onclick = () => {
+      form.classList.add("active");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    };
+  </script>
 
+  <!--////////// -------------- NAVBAR ENDS ------------ ////////////////  -->
+  <!-- ///////////////////////////////////////////////////  -->
 
-<script>
-const menuBtn = document.querySelector(".menu-icon span");
-const searchBtn = document.querySelector(".search-icon");
-const cancelBtn = document.querySelector(".cancel-icon");
-const items = document.querySelector(".nav-items");
-const form = document.querySelector("form");
-menuBtn.onclick = ()=>{
-  items.classList.add("active");
-  menuBtn.classList.add("hide");
-  searchBtn.classList.add("hide");
-  cancelBtn.classList.add("show");
-}
-cancelBtn.onclick = ()=>{
-  items.classList.remove("active");
-  menuBtn.classList.remove("hide");
-  searchBtn.classList.remove("hide");
-  cancelBtn.classList.remove("show");
-  form.classList.remove("active");
-  cancelBtn.style.color = "#ff3d00";
-}
-searchBtn.onclick = ()=>{
-  form.classList.add("active");
-  searchBtn.classList.add("hide");
-  cancelBtn.classList.add("show");
-}
-</script>
+  <!-- ////////////////////////////////// -->
 
-
-<!--////////// -------------- NAVBAR ENDS ------------ ////////////////  -->
-<!-- ///////////////////////////////////////////////////  -->
-
-
-
-
-<!-- ////////////////////////////////// -->
-
-<div class="hero-image">
-    <img class="hero-image" src="./Assets/contact-us-communication-support-service-assistance-concept_53876-128103.jpg" alt="">
+  <div class="hero-image">
+    <img
+      class="hero-image"
+      src="./Assets/contact-us-communication-support-service-assistance-concept_53876-128103.jpg"
+      alt=""
+    />
     <div class="hero-text">
       <!-- <h1>Contact Us </h1> -->
       <p>Best Brain Examinations Konsortium</p>
-      
     </div>
   </div>
 
   <!-- <br> -->
 
   <div class="map">
-    <p class="map-img"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.7031408251987!2d-0.23272762601591188!3d5.6107872943701596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf99799d5b43b5%3A0xdf3f5042d45a4350!2sBest%20Brain%20Examinations%20Konsortium!5e0!3m2!1sen!2sgh!4v1714481589029!5m2!1sen!2sgh" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
-
+    <p class="map-img">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.7031408251987!2d-0.23272762601591188!3d5.6107872943701596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf99799d5b43b5%3A0xdf3f5042d45a4350!2sBest%20Brain%20Examinations%20Konsortium!5e0!3m2!1sen!2sgh!4v1714481589029!5m2!1sen!2sgh"
+        width="100%"
+        height="550"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </p>
   </div>
 
+  <!-- ////////////////////////////////////////////////  -->
 
-<!-- ////////////////////////////////////////////////  -->
-
-<div class="container">
+  <div class="container">
     <span class="big-circle"></span>
     <img src="img/shape.png" class="square" alt="" />
     <div class="form">
       <div class="contact-info">
         <h3 class="title">Let's get in touch</h3>
-        <p class="text">
-            We are just moments away. Send us a message
-        </p>
+        <p class="text">We are just moments away. Send us a message</p>
 
         <div class="info">
           <div class="information">
@@ -259,31 +259,163 @@ searchBtn.onclick = ()=>{
     </div>
   </div>
 
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+  <!-- /////////////////// ---------- FOOTER STARTS ----------------- //////////////////  -->
+  <footer class="footer2">
+    <div class="containerr">
+
+    <div class="col1">
+      <a href="" class="brand">Brand</a>
+
+      <ul class="media-icons">
+        <li>
+          <a href="">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <i class="fab fa-tumblr"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+
+
+    </div>
+
+    <!-- ///////////////// COL 2 ///////  -->
+    <div class="col2">
+      <ul class="menu">
+        <li>
+          <a href="">Home</a>
+        </li>
+
+        <li>
+          <a href="">About</a>
+        </li>
+
+        <li>
+          <a href="">Contact</a>
+        </li>
+
+        <li>
+          <a href="">Blog</a>
+        </li>
+
+        <li>
+          <a href="">Services</a>
+        </li>
+
+        <li>
+          <a href="">Pricing</a>
+        </li>
+      </ul>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Porro repudiandae reiciendis, quos fugiat voluptatum itaque! Magnam alias
+        ducimus perferendis nesciunt, laboriosam officiis soluta praesentium,
+        fugiat saepe mollitia to et!
+      </p>
+
+    </div>
+
+
+<!-- ///////////////////////// COL3  ///////////  -->
+<div class="col3">
+  <P>Subscribe to our newsletter</P>
+  <form>
+    <div class="input-wrap">
+    <input type="email" placeholder="hunsunicholas@gmail.com"/>
+    <button type="submit">
+      <i class="fas fa-paper-plane">
+
+      </i>
+
+    </button>
+  </form>
+
+</div>
+
+
+<ul class="service-icons">
+  <li>
+    <a href="">
+      <i class="fab fa-cc-amazon-pay "></i>
+    </a>
+  </li>
+
+  <li>
+    <a href="">
+      <i class="fab fa-cc-mastercard "></i>
+    </a>
+  </li>
+
+
+  <li>
+    <a href="">
+      <i class="fab fa-cc-apple-pay "></i>
+    </a>
+  </li>
+
+  <li>
+    <a href="">
+      <i class="fab fa-cc-stripe "></i>
+    </a>
+  </li>
+
+
+  <li>
+    <a href="">
+      <i class="fab fa-cc-visa "></i>
+    </a>
+  </li>
+
+
+</ul>
+
+</div>
+
+
+    </div>
+    
+  </footer>
 
 
 
@@ -291,25 +423,7 @@ searchBtn.onclick = ()=>{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="./script.js"></script>
-    <script src="./contact.js"></script>
-    <script src="./Js/bootstrap.min.js"></script>
-  </body>
-  
+  <script src="./script.js"></script>
+  <script src="./contact.js"></script>
+  <script src="./Js/bootstrap.min.js"></script>
+</body>
