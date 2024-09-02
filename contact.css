@@ -596,9 +596,9 @@ textarea.input {
 .btn {
   padding: 0.6rem 1.3rem;
   background-color: #fff;
-  border: 2px solid #fafafa;
+  border: 2px solid #fff !important;
   font-size: 0.95rem;
-  color: #1abc9c;
+  /* color: #1abc9c; */
   line-height: 1;
   border-radius: 5px;
   outline: none;
@@ -606,11 +606,12 @@ textarea.input {
   transition: 0.3s;
   margin: 0;
   width: 100%;
+  color: #fff !important;
 }
 
 .btn:hover {
-  background-color: transparent;
-  color: #fff;
+  background-color: #ffffff5c;
+  /* color: #fff; */
 }
 
 .input-container span {
@@ -713,6 +714,7 @@ textarea.input {
   line-height: 35px;
   margin-right: 0.5rem;
   transition: 0.3s;
+  padding: 8px;
 }
 
 .social-icons a:hover {
