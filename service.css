@@ -529,7 +529,7 @@ button:hover{
 
 .hero-text{
   text-align: center;
-padding-top: 10%;
+padding-top: 8%;
 font-size: 150%;
 font-weight: bolder;
 color: #000aba;
@@ -911,12 +911,14 @@ img{
 @media(min-width:768){
 .col {
   padding: 10px;
+  padding-top: 5%;
 }
 }
 @media  (max-width: 768px) 
 {
   .col {
   padding: 10px;
+  padding-top: 5%;
 }
 }
 
