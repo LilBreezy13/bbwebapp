@@ -5,30 +5,30 @@ function Signup() {
     const phoneNumber = document.getElementById('PhoneNumber').value;
     const password = document.getElementById('password').value;
     
-    // Basic phone number format validation (e.g., 123-456-7890)
-    const phonePattern = /^\d{3}-\d{3}-\d{4}$/;
-    const phoneErrorElement = document.getElementById('phone-error');
+    // // Basic phone number format validation (e.g., 123-456-7890)
+    // const phonePattern = /^\d{3}-\d{3}-\d{4}$/;
+    // const phoneErrorElement = document.getElementById('phone-error');
   
-    if (!phonePattern.test(phoneNumber)) {
-        phoneErrorElement.style.display = 'block';
-        return; // Stop the form submission if phone number is invalid
-    } else {
-        phoneErrorElement.style.display = 'none';
-    }
+    // if (!phonePattern.test(phoneNumber)) {
+    //     phoneErrorElement.style.display = 'block';
+    //     return; // Stop the form submission if phone number is invalid
+    // } else {
+    //     phoneErrorElement.style.display = 'none';
+    // }
   
     const payload = {
-        firstName: firstName,
-        lastName: lastName,
+        first_name: firstName,
+        last_name: lastName,
         email: email,
-        phone: phoneNumber,
+        phone_number: phoneNumber,
         password: password
     };
+
+    console.log('Submitting signup form', payload);
   
     fetch('http://localhost:3000/v1/auth/register', {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
+     
         body: JSON.stringify(payload)
     })
     .then(response => {
@@ -38,7 +38,7 @@ function Signup() {
             });
         }
         return response.json();
-    })
+    }) 
     .then(data => {
         console.log(data); // Handle the successful response
         alert('Signup successful!'); // Provide feedback to the user
@@ -47,10 +47,14 @@ function Signup() {
         try {
             const errorData = JSON.parse(error.message);
             const errorMessage = errorData.resp_desc || 'An unknown error occurred.';
+           console.log (errorMessage)
             alert(errorMessage); // Alert the custom error message to the user
         } catch (e) {
+            console.log("Checking", error.message)
             alert(error.message);
         }
+
+    
     });
   }
   
